@@ -13,7 +13,7 @@ export default function Home() {
   const getGifs = async (value) => {
     setIsLoading(true);
 
-    const res = await fetch(`http://api.giphy.com/v1/gifs/search?q=${value}&api_key=${process.env.NEXT_PUBLIC_GIPHY_API_KEY}&limit=9`);
+    const res = await fetch(`https://api.giphy.com/v1/gifs/search?q=${value}&api_key=${process.env.NEXT_PUBLIC_GIPHY_API_KEY}&limit=9`);
 
     if (res.status === 200) {
       const result = await res.json();
@@ -29,7 +29,7 @@ export default function Home() {
   const getRandomGifs = async () => {
     setIsLoading(true);
 
-    const res = await fetch(`http://api.giphy.com/v1/gifs/trending?api_key=${process.env.NEXT_PUBLIC_GIPHY_API_KEY}&limit=9`);
+    const res = await fetch(`https://api.giphy.com/v1/gifs/trending?api_key=${process.env.NEXT_PUBLIC_GIPHY_API_KEY}&limit=9`);
 
     if (res.status === 200) {
       const result = await res.json();
