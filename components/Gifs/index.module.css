@@ -9,3 +9,20 @@
   width: 100%;
   margin-bottom: 10px;
 }
+
+.imageLoad {
+  background-color: #eee;
+  animation-name: loading;
+  animation-duration: .3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes loading {
+  from {
+    background-color: #eee;
+  }
+  to {
+    background-color: #bfbfbf;
+  }
+}

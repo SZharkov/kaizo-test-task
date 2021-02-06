@@ -8,6 +8,7 @@ const Gifs = ({ data }) => {
 			{data.map(el => (
 				<div key={el.id} className={styles.image}>
 					<Image
+						className={styles.imageLoad}
 						src={el.images.fixed_width.url}
 						alt={el.title}
 						width={el.images.fixed_width.width}
