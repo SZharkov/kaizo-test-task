@@ -1,0 +1,25 @@
+.container {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.spinner {
+  color: #f8f9fa ;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  border: .25em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation-name: spinner;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg)
+  }
+}

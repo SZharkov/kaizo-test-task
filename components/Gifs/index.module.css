@@ -1,0 +1,10 @@
+.grid {
+  gap: 10px;
+  columns: 3 150px;
+}
+
+.image {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
