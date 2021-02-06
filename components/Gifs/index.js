@@ -6,9 +6,8 @@ const Gifs = ({ data }) => {
 	return data.length ? (
 		<div className={styles.grid}>
 			{data.map(el => (
-				<div className={styles.image}>
+				<div key={el.id} className={styles.image}>
 					<Image
-						key={el.id}
 						src={el.images.fixed_width.url}
 						alt={el.title}
 						width={el.images.fixed_width.width}
